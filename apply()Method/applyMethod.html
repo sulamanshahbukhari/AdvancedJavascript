@@ -1,0 +1,29 @@
+<script>
+    // [Def]: simmilar to call method
+    // [call vs Apply]: call() takes arguments separately vs apply() takes arguments as an array
+    // [desc]: apply method takes two arguments apply(argument1,argument2 i.e array)
+    // see call method for reference
+    "use strict"
+  const youtuber1 = {
+    name:'edward',
+    channelname: 'dev ed',
+    feature: function(age,category){
+        console.log(`my favourite ytber is ${this.name} and his channel name is 
+        ${this.channelname} he is ${age} years old. He makes videos related to ${category} category.`);
+    }
+  } 
+const youtuber2={
+    name:'Taimor',
+    channelname:'Moorroo'
+}
+youtuber1.feature.apply(youtuber2,[24,'Travel']);
+
+// [WHY] use apply ? with eg 
+let maxval= Math.max(1,2,3);
+console.log(maxval);
+
+// max() method doesnot support arrays so we can use apply here eg.
+let maxarray=Math.max.apply(null,[1,2,3,4,5,6,7]);
+console.log(`max number in array is ${maxarray}.`)
+
+</script>

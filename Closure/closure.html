@@ -1,0 +1,32 @@
+<script>
+    // [Def]: closure are those in which inner fucntion can access outer function variables. i,e 
+    // [Desc]: similar to lexical scoping where childfunctions() can acess variables of parrentfunctions()
+    // and its not possible in vice versa situation where parrent can access child variables
+
+    const interview = (name) => {
+        return function(topic)
+        {
+            if(name==="sulaman")
+            {
+                console.log(`Hello ${name} Please explain ${topic}. `)
+
+            }
+            else if(name==="shah")
+            {
+                console.log(`Hello ${name} Can you  explain ${topic}? `)
+
+            }
+            else if(name==="bukhari")
+            {
+                console.log(`Hello ${name} describe ${topic}. `)
+
+            }
+        }
+      }
+    
+    const candidate= interview('sulaman');
+    candidate('UX');
+    //check in console in scopes that its a closure
+    // console.dir(candidate);
+  </script>
+  

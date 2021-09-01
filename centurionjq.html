@@ -1,0 +1,35 @@
+<script>
+  // jQuery('#wpadminbar .single-location-items #menu-item-985').click(function(){
+  //     var curcss= jQuery(".single-location .internet-wifi" ).css("display");
+  //     jQuery(curcss).css('display', 'block');
+
+  // });
+  // locationinfo btn event
+  var locationinfodiv = document.querySelector(".single-location .location-info");
+  var officePersonal = document.querySelector(".single-location .office-personnel");
+  var virtualtour = document.querySelector(".single-location .video-tour");
+  var wifi = document.querySelector(".single-location .internet-wifi");
+  var btn = document.querySelector("#menu-item-984");
+  btn.addEventListener("click", function () {
+    officePersonal.style.display = "block";
+    locationinfodiv.style.display = "block";
+    virtualtour.style.display = "none";
+    wifi.style.display = "none";
+  });
+  // btn wifi event
+  var btn = document.querySelector("#menu-item-985");
+  btn.addEventListener("click", function () {
+    officePersonal.style.display = "none";
+    locationinfodiv.style.display = "none";
+    virtualtour.style.display = "none";
+    wifi.style.display = "block";
+  });
+  // virtual tour btn event
+  var btn = document.querySelector("#menu-item-988");
+  btn.addEventListener("click", function () {
+    officePersonal.style.display = "none";
+    locationinfodiv.style.display = "none";
+    virtualtour.style.display = "block";
+    wifi.style.display = "none";
+  });
+</script>

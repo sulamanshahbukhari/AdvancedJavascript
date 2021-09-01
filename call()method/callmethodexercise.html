@@ -1,0 +1,23 @@
+<script>
+    // call method: is used by one object to use methods of another object
+
+    //obj1
+  const youtuber1 = {
+    name:'edward',
+    channelname: 'dev ed',
+    feature: function(age){
+        console.log(`my favourite ytber is ${this.name} and his channel name is 
+        ${this.channelname} he is ${age} years old.`);
+    }
+  } 
+//   youtuber1.feature();
+//   obj2
+const youtuber2={
+    name:'Taimor',
+    channelname:'Moorroo'
+}
+// call method implementation 
+// obj1.method.call(object2refrence(where you want to call obj1 methods),arguments)
+youtuber1.feature.call(youtuber2,24);
+
+</script>

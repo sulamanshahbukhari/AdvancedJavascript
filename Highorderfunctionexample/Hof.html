@@ -1,0 +1,24 @@
+<script>
+  // def: high order functions are those functions which return aother functions
+    const interview = (name) => {
+      if (name === "sulaman") {
+        return function (topic) {
+          console.log(`Hello ${name} Explain ${topic} to us `);
+        };
+      }
+        if (name === "shah") {
+          return function (topic) {
+            console.log(`Hi ${name} Explain ${topic} to us please`);
+          };
+        }
+        if (name === "bukhari") {
+          return function (topic) {
+            console.log(`Salam ${name} can you explaion ${topic} in brief? `);
+          };
+        }
+      }
+    
+    const candidate= interview('sulaman');
+    candidate('UX');
+  </script>
+  
