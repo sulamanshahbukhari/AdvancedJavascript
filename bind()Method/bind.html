@@ -1,7 +1,29 @@
 <script>
-    // [Def]:
-    const scopethis =()=>{
-
-        console.log(this);
+    // [Def]: bind() method takses an object as first argument and create a new function
+    // example 1 we have 2 objects
+    const youtuber1 ={
+        name:'Mooroo',
+        content:"travel vlogs",
+        feature : function(){
+            console.log(`my favourite youtube is ${this.name} . He creates amazing ${this.content}.`);
+        }
     }
+
+    const youtuber2={
+        name:"Unbox therapy",
+        content:"Tech videos"
+    }
+    // ---------simple calling method through obj 1
+    // youtuber1.feature();
+
+    // ---------doesnt give output
+    // let displayinfo=youtuber1.feature;
+    // displayinfo();
+
+    // ----------through bind method
+    let displayinfo= youtuber1.feature.bind(youtuber2);
+    displayinfo();
+
+    
+    
 </script>

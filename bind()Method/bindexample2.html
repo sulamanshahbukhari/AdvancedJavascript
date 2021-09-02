@@ -1,0 +1,21 @@
+<script>
+
+     let youtuber1={
+         name:'Junaid Akram',
+         content:"misc"
+     }
+     let youtuber2={
+         name:'dev ed',
+         content:"coding"
+     }
+     let youtuber3={
+         name:'IGN',
+         content:"Entertainment"
+     }
+     function feature(){
+         console.log(` ${this.name} is an amazing youtuber his ${this.content} related videos are amazing`);
+     }
+
+        let displayinfo= feature.bind(youtuber1);
+        displayinfo();
+</script>
