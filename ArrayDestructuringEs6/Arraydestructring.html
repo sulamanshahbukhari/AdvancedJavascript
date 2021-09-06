@@ -1,0 +1,19 @@
+<script>
+    // [Def] Array destructuring
+const myfavproglang=['js','react','php','python'];
+// before 
+// let top1=myfavproglang[0];
+// let top2=myfavproglang[0];    
+// let top3=myfavproglang[0];  
+// console.log(`my fav prog lang is ${top1}`);  
+
+// Es6 array destructuring
+// let [top1,top2,top3,top4]=myfavproglang;
+// console.log(`my favourite backend programming language is ${top3}`);
+
+// skiping
+let [top1,,,top4]=myfavproglang;
+console.log(`my favourite front programming language is ${top1} and my favourite backend programming language is ${top4}`);
+
+
+</script>

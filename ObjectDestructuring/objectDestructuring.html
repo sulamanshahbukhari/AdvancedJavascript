@@ -1,0 +1,17 @@
+<script>
+    // def object destructing use orderly pattern
+    let bioData={
+        name:"Sulaman",
+        age:23,
+        profession:'Front end engineer',
+        hobby:{
+            first:'playing video games',
+            sec:'painting'
+        }
+    }
+    // with object destructuring
+    let {name:myName,age,profession,hobby}=bioData;
+    console.log(myName +' loves '+hobby.first);
+    // without object destructuring we have to write
+    console.log(bioData.profession);
+</script>

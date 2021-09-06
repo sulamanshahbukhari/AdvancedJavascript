@@ -1,0 +1,18 @@
+<script>
+  // [Def] rest parameters (...) returns array of arguments in es6
+  const restParameters = (...inputs) => {
+    console.log(inputs); //shows Arrray of 7
+    console.log(...inputs); //display value of array
+  }
+  restParameters(1, 2, 3, 4, 5, 6, 7);
+
+  // adddition using rest parametes
+  const addNumbers = (...num) => {
+    let total = 0;
+    for(let i of num){
+        total+=i;
+    }
+    console.log(total);
+  }
+  addNumbers(5, 5, 5, 5, 5, 5, 5, 5, 5, 5,5);
+</script>

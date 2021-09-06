@@ -1,0 +1,30 @@
+<script>
+    // students class with player
+    // parent class
+    class students{
+        constructor(name,age,cls){
+            this.myName=name;
+            this.myAge=age;
+            this.myCls=cls;
+        }
+        bioData(){
+            return `H1 i am ${this.myName} i am ${this.myAge} years old and i am in class ${this.myCls}`;
+        }
+    }
+    // child class for students
+    // use super method to get props of parent
+    class player extends students{
+        constructor(name,age,cls,game){
+            super(name,age,cls);
+            this.myGame=game;
+        }
+        // child class method which returns parrent class method 
+        player_bioData(){
+            return `${super.bioData()} and i am a ${this.myGame} player`;
+        }
+    }
+       // create parent class object
+       let obj1= new player('Sulaman',23,'BSSE','football');
+  console.log( obj1.player_bioData()); 
+   
+</script>
