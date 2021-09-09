@@ -1,0 +1,13 @@
+<script>
+    // [Def] eventloop moves function from [Message Queue] to [Execution stack] when the function completes in web api eg settimeout function bts
+    const function1= ()=>{
+        console.log('This is function one');
+    } 
+    const function2=()=>{
+        setTimeout(()=>{
+            function1();
+        },3000);
+        console.log("loading....");
+    }
+    function2();
+</script>
