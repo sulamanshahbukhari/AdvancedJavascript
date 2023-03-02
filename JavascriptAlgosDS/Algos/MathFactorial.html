@@ -1,0 +1,36 @@
+<script>
+    "use strict"
+    // [def]:is the product of all positive integers less than or equal to n. The factorial of n also equals the product of n with the next smaller factorial
+    // factorial of 0 is 1 & fact of 1 is 1
+    // factorial of 4 = 4*3*2*1 =24
+
+
+    // problem statement: given integer n find factorial of integer
+
+    // psuedocode:
+
+    //sol: 
+
+function factorial(n) {
+    let result=1;
+    for (let i = 2; i <= n; i++) //as fact of 0 is 1 and 1 is also 1
+    {
+       result =result * i;
+        
+    }
+    return result
+}
+    console.log(factorial(0)) //1
+    console.log(factorial(1)) //1
+    console.log(factorial(4)) //24
+
+
+
+
+    // ---> Big O = O(n)
+
+     //Big O cheat sheet (worst case )
+    // loop  O(n) 
+    // nested loop O(n ^ 2) ( must avoid for better performance)
+    // input size reduced by half O(logn)
+</script>

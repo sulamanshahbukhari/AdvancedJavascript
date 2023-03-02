@@ -1,0 +1,33 @@
+<script>
+    "use strict"
+    // [def]:the Fibonacci sequence, in which each number is the sum of the two preceding ones. The sequence commonly starts from 0 and 1,
+    
+    // problem statement: given number n find first n elemnts fionacci sequence
+
+    // sol: as we know first two sequence alawys returns 0,1
+    function fibonacciSeq(n){
+
+        const fib =[0,1];
+        for(let i=2;i<n;i++)//since we already have array with 0,1 index and is same for all numbers we start from 2 index
+        {
+            fib[i]=fib[i-1]+ fib[i-2];
+
+        }
+        return fib //return array
+    }   
+
+    
+    console.log(fibonacciSeq(2))//[0,1]
+    console.log(fibonacciSeq(3))//[0,1,1]
+    console.log(fibonacciSeq(4))//[0,1,1,2]
+    console.log(fibonacciSeq(7))//[0,1,1,2,3,5,8]
+
+// ---> Big O = O(n)
+
+     //Big O cheat sheet (worst case )
+    // loop  O(n) 
+    // nested loop O(n ^ 2) ( must avoid for better performance)
+    // input size reduced by half O(logn)
+
+
+</script>
