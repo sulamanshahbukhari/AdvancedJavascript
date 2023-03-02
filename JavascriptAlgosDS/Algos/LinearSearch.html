@@ -1,22 +1,40 @@
 <script>
     "use strict"
     // [def] linear search algorithm
-    // problem statement:  return -1 if target element is not present return index of elemtnt array  time complexity should be O(n)
-    //psudocode 
+    // problem statement: find element in an array and return index of elemnt
+    //  return -1 if target element is not present return index of elemtnt array  time complexity should be O(n)
+   
+    //psudocode- 
+
+
     // solution
     function linearSearchindex(arr,target){
 
-    for(let i=0;i<=arr.length;i++)
-    {
-        if(arr[i]==target)
+        for(let i=0;i<=arr.length;i++)
         {
-            return i;
+            if(arr[i]==target)
+            {
+                return i;
+            }
         }
-    }
-    return -1;
+        return -1;
 
     }
+
     console.log(linearSearchindex([-5,4,6,8,10,12],6))
-    //BigO time complexity
+
+    // -------------------------------------
+    //----------time complexity-------------
+    // -------------------------------------
+
+    //Big O cheat sheet (worst case )
+    // time complexity of for loop is  O(n) 
+    // if the input value is reduced by half then time complexity is O(logn)
+
+    // -------------------------------------------
+    //----------space complexity--------------
+    // -------------------------------------------
+
+    
 
 </script>

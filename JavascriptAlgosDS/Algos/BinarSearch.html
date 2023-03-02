@@ -1,32 +1,49 @@
 <script>
     "use strict"
     // Binary Search sorted array
-    // problem statement 
-    // Psudoe code
-    // big O notation
+    // problem statement : find element in sorted array and return index of element
+
+    // psuedocode :
+    // step1 first find middle index and return index if element is matches middle
+    // step2 if target e is less than middle ele then check it on left side of array
+    // cont : if target e is greater  than middle ele then check it on right side of array
+
+ 
     // solution
 function bsearch(arr,target){
    let leftindex=0;
-   let rightindex=arr.length-1;
+   let rightindex=arr.length-1; //given array extreme right is 4
   
   while(leftindex <= rightindex){
     
-    let middleindex=Math.floor((leftindex+rightindex)/2);
+    let middleindex=Math.floor((leftindex+rightindex)/2); //math .floor is used if the middle is given in decimal values eg 3.5
     
-    if(target==arr[middleindex])
+    if(target==arr[middleindex]) //return the index if target= middle element
       {
         return middleindex;
       }
-    if(target<arr[middleindex]){
+    if(target<arr[middleindex]) //target < middle check left side of array
+    {
        rightindex=middleindex-1;
     }
     else{
-       leftindex=middleindex+1;
+       leftindex=middleindex+1;// target > middle check right side of array
     }
   }
   return -1;
   
 }
 console.log(bsearch([-5,2,4,6,10],6))
+ 
+    // -------------------------------------
+    //----------time complexity-------------
+    // -------------------------------------
 
+    //Big O cheat sheet (worst case )
+    // time complexity of for loop is  O(n) 
+    // if the input value is reduced by half then time complexity is O(logn)
+
+    // -------------------------------------------
+    //----------space complexity--------------
+    // -------------------------------------------
 </script>
