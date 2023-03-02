@@ -1,0 +1,42 @@
+<script>
+    "use strict"
+    // [def] Sorting algorithm 
+
+    // problem statement: given an array of integers sort an array
+
+    // [note]: bubble sort is a poor sorting algorithm and is primarily used for intro to sorting algorithms interview
+    
+    //idea : compare adjacent elements on different index and swap places 
+   
+    //psudocode
+    // step 1 transverse through array from 1st index  and check if elemnt at current index > than adjacent index
+    // cont: if adjacent index is smaller than currnet element swap there position 
+    // step2: check if elements are swapped after first alteration using boolean value 
+    // step3: if elements are not swapped and are not in sorted order redo the loop for that enclose the for loop with do while loop with condition swapped
+    // finally exit the loop after the operation is completed
+    function BubbleSort(arr) {
+        let swapped;
+        do {
+            swapped=false;
+	
+	        for (let i = 0; i < arr.length-1; i++) {
+	            if(arr[i]>arr[i+1])
+	            {
+	             let temp=arr[i];
+	             arr[i]=arr[i+1];
+	             arr[i+1]=temp;
+                 swapped=true;
+	
+	            }
+	          
+	
+	        }
+        } while (swapped);
+        
+        
+    }
+const arr=[8,20,-2,4,-6];
+BubbleSort(arr)
+    console.log(arr )
+    // Big O is quadratic time complexity i.e O(n^2) which is not great for sorting
+</script>
