@@ -1,5 +1,5 @@
+![JavaScript---Thumbnail-1200-x-630](https://user-images.githubusercontent.com/82945759/222911879-65bd3ec3-910b-4da6-8f41-5d6af9ca2b2a.jpg)
 
-![JavaScript---Thumbnail-1200-x-630](https://user-images.githubusercontent.com/82945759/222911668-dbc96f8f-7cb5-46f2-9c92-fc6f1a16743a.jpg)
 ## Advance Javascript Core Concepts
 Advanced JavaScript Concepts | Examples | Algorithms and Data structures
 
