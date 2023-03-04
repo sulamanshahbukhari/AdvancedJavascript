@@ -1,11 +1,18 @@
-# AdvancedJavascript
+## Advance Javascript Core Concepts
 Advanced JavaScript Concepts | Examples | Algorithms and Data structures
 
-# Idea
-document concepts javascripts whith examples and definitions to understand javascript to its full potential
-added algos and ds
-added concepts definationa and usecases
 
-# working
-install live server vscode extention to view html file in browser
-user console of your favourite browser to view logs and debug 
+## Idea
+This Repo includes Javascript code examples for concepts used in web development or Problem solving in general.
+- added algos and data structures (will try to cover most common algos and ds used )
+- Includes Js core concepts , function definations and usecases.
+- Added psuedocodes , explanations , usecases to answer why.
+
+## working
+to get started fork the repo and  clone the repo using following command
+```
+git clone <repo link>
+```
+
+Install live server vscode extention to view html file in browser
+use console of your favourite browser to view logs and debug 
