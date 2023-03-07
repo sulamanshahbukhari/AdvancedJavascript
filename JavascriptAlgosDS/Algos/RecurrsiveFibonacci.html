@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reacurrsive Fibonacci</title>
+</head>
+<body>
+
+<h1>RECURRSIVE FIBONACCI SEQ</h1>
+ 
+    <script>
+        "use strict"
+        // formula
+        // fn=fn-1 + fn-2
+        // f0=0 and  f1=1 what we know
+        // f2=f1 + f0
+        // f2 =1+0
+        // f2=1
+
+
+        function RecurrsiveFibonacci (n){
+            if (n <2)
+            {
+           return n
+            }
+             return RecurrsiveFibonacci(n-1) + RecurrsiveFibonacci(n-2);
+
+        }
+
+        console.log(RecurrsiveFibonacci(1)) // 1
+        console.log(RecurrsiveFibonacci(2)) // 1
+        console.log(RecurrsiveFibonacci(6)) // 8
+
+        // Big O time comlexity for Iterative fibonacci algo is O(n)
+        // while recurrsive fin has O(2^n ) which is worst and should be highly avoided 
+
+    </script>
+    
+</body>
+</html>
