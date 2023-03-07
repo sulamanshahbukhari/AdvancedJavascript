@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Prime numbers</h1>
+    <p>[def]: A Prime number is a greater than 1 and is not a product of two small natural numbers</p>
+    <b>problem statement : given a natural number determine if number is prime or not </b>
+    <script>
+        "use strict"
+            //Prime number
+            // [def]: A Prime number is agreater than 1 and is not a product of two small natural numbers
+            // eg Prime(5)= true because 1*5 or 5*1
+            //  Prime(4) = false (1*4  or 2 *2  or 4*1 ) since it ca be a product of 2 smaller numbers not prime
+        
+            // problem statement : given a natural number determine if number is prime or not 
+        
+            function IsPrime(n) {
+               if (n < 2)
+               {
+                return false //in order to be prime n must have product of smaller values
+               }
+               for(let i=2; i < n ; i++)
+               {
+                 if(n%i==0)
+                {
+                    return false
+                }
+               }
+        
+               return true
+                
+            }
+            
+        
+            console.log(IsPrime(1)); //false
+            console.log(IsPrime(5)); //true
+            console.log(IsPrime(4));  //false
+        
+        
+        
+        
+        </script>
+</body>
+</html>
