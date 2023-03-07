@@ -24,9 +24,9 @@
                {
                 return false //in order to be prime n must have product of smaller values
                }
-               for(let i=2; i < n ; i++)
+               for(let i=2; i < n ; i++) //loop througgh i times if i < n 
                {
-                 if(n%i==0)
+                 if(n%i==0) //if n is divisible by i and result is 0 its not a Prime number
                 {
                     return false
                 }
@@ -42,7 +42,7 @@
             console.log(IsPrime(4));  //false
         
         
-        
+        // big = O(n)
         
         </script>
 </body>
