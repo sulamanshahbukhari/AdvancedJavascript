@@ -3,6 +3,8 @@
     // Binary Search sorted array
     // problem statement : find element in sorted array and return index of element
 
+    // idea : split the array into two equal parts from mid and find mid element. then sort array
+
     // psuedocode :
     // step1 first find middle index and return index if element is matches middle
     // step2 if target e is less than middle ele then check it on left side of array
@@ -26,7 +28,7 @@ function bsearch(arr,target){
        rightindex=middleindex-1;
     }
     else{
-       leftindex=middleindex+1;// target > middle check right side of array
+       leftindex= +1;// target > middle check right side of array
     }
   }
   return -1;
